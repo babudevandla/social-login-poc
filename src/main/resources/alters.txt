@@ -1,0 +1,23 @@
+
+
+CREATE TABLE `roles` (
+  `roleid` INT NOT NULL AUTO_INCREMENT,
+  `role` VARCHAR(100) NULL,
+  PRIMARY KEY (`roleid`));
+
+  
+  
+INSERT INTO `roles` (`roleid`, `role`) VALUES ('1', 'ROLE_DEV');
+INSERT INTO `roles` (`roleid`, `role`) VALUES ('2', 'ROLE_ADMIN');
+
+-----------------------------------------------
+
+CREATE TABLE `users` (
+  `userid` INT(11) NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NULL,
+  `roleid` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`userid`));
+
+
+INSERT INTO `users` (`userid`, `username`, `roleid`) VALUES ('1', 'babu.devandla@nextory.com', '1');
+ 
